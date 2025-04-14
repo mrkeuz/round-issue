@@ -19,7 +19,7 @@ public class RoundAndroidUnitTest {
     @Test
     public void round_decimal_format_isCorrect() {
         double d = 4.151756982317492876123;
-        double actual = UtilMath.round(d);
+        double actual = UtilMath.round_decimal_format(d);
         //Compare doubles with fration 0.001
         assertEquals(4.2, actual, 0.001);
     }
@@ -27,7 +27,7 @@ public class RoundAndroidUnitTest {
     @Test
     public void round_agnostic_apollo_isCorrect() {
         double d = 4.151756982317492876123;
-        double actual = UtilMath.round2(d);
+        double actual = UtilMath.round_apollo(d);
         //Compare doubles with fration 0.001
         assertEquals(4.1, actual, 0.001);
     }
