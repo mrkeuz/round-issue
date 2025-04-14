@@ -19,7 +19,7 @@ public class ExampleUnitTest {
     @Test
     public void round_isCorrect() {
         double d = 4.151756982317492876123;
-        double actual = UtilMath.round(d); //You implemetation
+        double actual = UtilMath.round(d); 
         //Compare doubles with fration 0.001
         assertEquals(4.2 , actual, 0.001);
     }
@@ -27,7 +27,7 @@ public class ExampleUnitTest {
     @Test
     public void round2_isCorrect() {
         double d = 4.151756982317492876123;
-        double actual = UtilMath.round2(d); //You implemetation
+        double actual = UtilMath.round2(d); //agnostic-apollo implementation
         //Compare doubles with fration 0.001
         assertEquals(4.1, actual, 0.001);
     }
