@@ -24,7 +24,7 @@ public class ExampleUnitTest {
         double d = 4.151756982317492876123;
         double actual = UtilMath.round_apollo(d); //agnostic-apollo implementation
         //Compare doubles with fration 0.001
-        assertEquals(4.1, actual, 0.001);
+        assertEquals(4.2, actual, 0.001);
     }
 
     @Test
@@ -38,13 +38,13 @@ public class ExampleUnitTest {
 
         System.out.println(actual);
         //Compare doubles with fration 0.001
-        assertEquals(4.1, actual, 0.001);
+        assertEquals(4.2, actual, 0.001);
     }
 
     @Test
     public void round_pure_without_function_isCorrect() { //FAIL
         double d = 4.151756982317492876123;
         //Compare doubles with fration 0.001
-        assertEquals(4.1, (Math.round(d * 10.0f) / 10.0f), 0.001);
+        assertEquals(4.2, (Math.round(d * 10.0f) / 10.0f), 0.001);
     }
 }
